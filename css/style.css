@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  background: #98d9c2;
+}
+a{
+text-decoration: none;
+color: white;
+}
+#header {
+  display: block;
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border: 3px solid #abedc6;
+  background: -moz-linear-gradient(
+    left,
+    rgba(189, 224, 239, 1) 0%,
+    rgba(46, 186, 229, 1) 50%,
+    rgba(198, 229, 241, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(189, 224, 239, 1)),
+    color-stop(50%, rgba(46, 186, 229, 1)),
+    color-stop(100%, rgba(198, 229, 241, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(189, 224, 239, 1) 0%,
+    rgba(46, 186, 229, 1) 50%,
+    rgba(198, 229, 241, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(189, 224, 239, 1) 0%,
+    rgba(46, 186, 229, 1) 50%,
+    rgba(198, 229, 241, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(189, 224, 239, 1) 0%,
+    rgba(46, 186, 229, 1) 50%,
+    rgba(198, 229, 241, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(189, 224, 239, 1) 0%,
+    rgba(46, 186, 229, 1) 50%,
+    rgba(198, 229, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bde0ef', endColorstr='#c6e5f1', GradientType=1 );
+}
+h1 {
+  display: block;
+  float: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.9em;
+  color: white;
+  font-weight: 200px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+}
+#argentina {
+  text-transform: uppercase;
+}
+#img1 {
+  display: block;
+  width: 50px;
+  height: auto;
+  float: left;
+  position: absolute;
+  top: 35px;
+  left: 500px;
+  border-radius: 10%;
+}
+#epilogo {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  text-align: justify;
+  width: 700px;
+  height: auto;
+  font-size: 0.9em;
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: 800px;
+
+  text-shadow: rgba(7, 4, 4, 0.692) 3px 3px 5px;
+}
+#capital {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#logo {
+  display: block;
+  width: 120px;
+  height: 170px;
+  position: absolute;
+  top: 70px;
+  right: 480px;
+}
+#img2 {
+  display: block;
+  float: right;
+  width: 400px;
+  height: 195px;
+  border-radius: 20px;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+#leyenda {
+  display: block;
+  width: 290px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 150px;
+ 
+  background: rgb(255, 243, 243);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: grey;
+}
+#search {
+  display: block;
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  float: right;
+  top: 5px;
+  right: 20px;
+
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3em;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+
+  border-style: double;
+  border-width: 4px;
+  border-color: rgb(4, 160, 233);
+  border-radius: 10px;
+  text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+}
+#search:hover{
+  background: white;
+  color:#058ed9;
+}
+#img3 {
+  display: block;
+  float: right;
+  width: 700px;
+  height: 70px;
+  border-radius: 20px;
+  position: absolute;
+  top: 190px;
+  left: 30px;
+}
+#img5 {
+  display: block;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 480px;
+}
+#img4 {
+  display: block;
+  width: 70px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 650px;
+}
+ul.menu {
+  clear: both;
+  display: block;
+  width: 1200px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 300px;
+  left: 10%;
+  font-family: "Secular One", sans-serif;
+  font-size: 1.4em;
+  list-style: none;
+  overflow: hidden;
+}
+ul.menu li {
+  width: 200px;
+  height: 100px;
+  padding-top: 7px;
+  border: 1px solid rgb(165, 165, 165);
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  color: white;
+  background: black;
+  float: left;
+
+  text-align: center;
+}
+ul.menu li:hover {
+  border: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+  color: black;
+}
+#img7 {
+  display: block;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 380px;
+}
+#seleccion {
+  display: block;
+  width: 80%;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+  top: 1000px;
+  left: 10%;
+  background: rgb(96, 92, 89);
+}
+#img8 {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 1000px;
+  left: 100px;
+}
+#boxer1 {
+  display: block;
+  width: 232px;
+  height: 40px;
+  position: absolute;
+  top: 1030px;
+  left: 110px;
+ 
+  background: rgb(255, 243, 243);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: grey;
+}
+#boxer2 {
+  display: block;
+  width: 232px;
+  height: 40px;
+  position: absolute;
+  top: 1030px;
+  left: 380px;
+ 
+  background: rgb(255, 243, 243);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: grey;
+}
+#btnSelector {
+  display: block;
+  width: 155px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 1027px;
+  right: 185px;
+  color: white;
+  background: rgb(48, 95, 250);
+  font-family: "Secular One", sans-serif;
+  font-size: large;
+}
+#btnSelector:hover {
+  font-weight: 600;
+  background: #f04b2e;
+}
+#img16 {
+  display: block;
+  width: 465px;
+  height: 200px;
+  position: relative;
+  top: 1100px;
+  margin: 5px;
+  float: left;
+}
+#img9 {
+  display: block;
+  width: 420px;
+  height: 200px;
+  position: relative;
+  top: 1100px;
+  margin: 5px;
+  float: left;
+}
+.izq {
+  display: inline-block;
+  width: 200px;
+  height: 500px;
+  position: relative;
+  top: 1170px;
+  float: left;
+
+  border: 1px solid black;
+}
+.caja {
+  display: block;
+  top: 100px;
+  width: 100%;
+  height: 40px;
+  color: white;
+  
+  background: #1e56a0;
+  border: 1px solid #338bff;
+  padding-top: 10px;
+  text-align: center;
+}
+.caja:hover {
+  color: black;
+  background: white;
+  border-bottom: 5px solid rgb(20, 177, 54);
+}
+
+#principal {
+  display: block;
+  width: 1050px;
+  height: 1000px;
+  position: absolute;
+  top: 1380px;
+  left: 200px;
+  margin: 5px;
+}
+.avisos {
+  display: block;
+  width: 400px;
+  height: 560px;
+  float: left;
+  margin: 10px;
+
+  border-right-width: 7px;
+  border-right-style: solid;
+  border-right-color: #496ddb;
+
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  border-bottom-color: #496ddb;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #717ec3;
+
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #717ec3;
+
+  border-radius: 30px;
+  overflow: hidden;
+  background: white;
+
+  box-shadow: rgb(62, 74, 247) 5px 5px 10px;
+}
+.imagen {
+  display: block;
+  width: 350px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+h3 {
+  text-align: center;
+  padding-top: 5px;
+}
+.nota {
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-weight: 200;
+  text-align: justify;
+}
+.boton{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 40px;
+  text-align: end;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Secular One", sans-serif;
+  background: rgb(48, 95, 250);
+  border: 2px solid rgb(4, 120, 187);
+  outline: 2px solid #3068cf;
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+.btnAvion{
+  display: block;
+  width: 70px;
+  height: 40px;
+  float: right;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.boton:hover{
+  font-weight: 600;
+  background: #f04b2e;
+  outline: 2px solid #f04b2e;
+}
+#aside {
+  display: block;
+  width: 250px;
+  height: 1750px;
+  position: absolute;
+  top: 1380px;
+  right: 0px;
+  margin: 5px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.banner {
+  display: block;
+  width: 240px;
+  height: auto;
+}
+#personajes {
+  display: block;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 3190px;
+  left: 0;
+}
+.box {
+  display: block;
+  width: 14%;
+  height: 250px;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+}
+.persona {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+}
+h4{
+  padding-top:10px;
+  -webkit-transition-property:font-size;
+  -webkit-transition-duration:0.5s;
+  -webkit-transition-timing-function:linear;
+  -webkit-transition-delay:0.5s;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.2em;
+  text-align: center;
+}
+h4:hover{
+  -webkit-transition-property:font-size;
+  -webkit-transition-duration:1s;
+  -webkit-transition-timing-function:linear;
+  -webkit-transition-delay:1s;
+  font-size: 1.8em; 
+}
+.trofeos {
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+  
+  font-weight: 400;
+  font-family: cursive;
+
+  -webkit-transition-property:font-size;
+  -webkit-transition-duration:0.5s;
+  -webkit-transition-timing-function:linear;
+  -webkit-transition-delay:0.5s;
+  font-size: 1em;
+}
+.trofeos:hover{
+  -webkit-transition-property:font-size;
+  -webkit-transition-duration:1s;
+  -webkit-transition-timing-function:linear;
+  -webkit-transition-delay:1s;
+  font-size: 1.2em; 
+}
+.marketing {
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 3490px;
+  left: 0;
+
+  overflow: hidden;
+}
+.tarjeta{
+  display: block;
+  width: 255px;
+  height: 150px;
+  margin: 0 5px 0 5px;;
+  float: left;
+}
+
+#footer {
+  display: block;
+  list-style-type: none;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  top: 3650px;
+  left: 0;
+  background: black;
+  color: white;
+}
+.columna {
+  margin: 30px 30px 30px 0px;
+  padding-right: 10px;
+  width: 22%;
+  height: 230px;
+  float: left;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.2em;
+  border-right: 2px solid grey;
+}
